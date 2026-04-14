@@ -6,12 +6,13 @@ import HomeScreen from '../screens/HomeScreen';
 import SendScreen from '../screens/SendScreen';
 import ReceiveScreen from '../screens/ReceiveScreen';
 import ConnectionScreen from '../screens/ConnectionScreen';
+import { navigationRef } from '../utils/NavigationUtil';
 
 const Stack = createNativeStackNavigator();
 
 const Navigation: FC = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
         initialRouteName="SplashScreen"
         screenOptions={{
