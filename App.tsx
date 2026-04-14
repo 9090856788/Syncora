@@ -1,12 +1,8 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React, { FC } from 'react';
+import Navigation from './src/navigation/Navigation';
 
-const App = () => {
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  )
-}
+const App: FC = () => {
+  return <Navigation />;
+};
 
-export default App
+export default App;
